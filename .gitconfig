@@ -1,0 +1,12 @@
+[user]
+    name = usera
+    email = usera@itworksonmymachine.com
+    signingkey = ABCDEF0123456789ABCDEF0123456789ABCDEF01
+
+; ignore some configs that are not associated with multiple users setup
+
+[includeIf "gitdir:userb_repos/"]
+    path = ~/.gitconfig.d/userb.inc
+
+[includeIf "gitdir:userc_repos/"]
+    path = ~/.gitconfig.d/userc.inc
