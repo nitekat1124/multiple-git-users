@@ -98,11 +98,15 @@ And that's it! You can now use multiple git users on a single machine. Each user
 ## Step 4: Using the users
 
 When you clone a repo from 'usera', there's no need for anything special. Simply do:
+
 ```bash
+cd ~/Workspace/usera_repos
 git clone git@github.com:usera/usera-repo.git
 ```
 
-However, when cloning a repo from 'userb' or 'userc', you must specify the rewritten remote URL. For example:
+However, when cloning a repo from 'userb' or 'userc', you must specify the rewritten remote URL and ensure that you are in the correct folder. For example:
+
 ```bash
+cd ~/Workspace/userb_repos
 git clone git@userb-github.com:userb/userb-repo.git
 ```
